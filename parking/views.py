@@ -2,7 +2,7 @@
 from django.shortcuts import render, redirect
 from .models import Parking
 from .forms import ParkingForm
-
+#parking project
 def home(request):
     data = Parking.objects.all()
     return render(request, 'home.html', {'data': data})
