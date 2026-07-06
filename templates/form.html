@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Parking Form</title>
+</head>
+<body>
+
+<h2>Parking Form</h2>
+
+<form method="POST">
+
+{% csrf_token %}
+
+{{ form.as_p }}
+
+<input type="submit" value="Save">
+
+</form>
+
+<a href="/">Back</a>
+
+</body>
+</html>
